@@ -7,9 +7,11 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            @livewire('create-post')
+            @livewire('create-post', [
+            'title' => "Hola Josef, pasado desde la vista",
+            'user'=>1
+            ])
 
-            <p>Contenido fuera del conponente</p>
         </div>
     </div>
 </x-app-layout>
